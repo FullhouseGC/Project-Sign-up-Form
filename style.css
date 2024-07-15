@@ -12,24 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-#text-logo{
-    top: 10px;
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    position: absolute;
-}
-h1{
-    font-family: big-shoulders;
-    font-size: 10vh;
-}
-
-#upper-text{
-    font-size: var(--main-text-size);
-    margin-left: var(--margin-left);
-    margin-top: var(--margin-top);
+    overflow: hidden;
 }
 
 #main{
@@ -42,10 +25,35 @@ h1{
     width: 50%;
 }
 
-.form{
-    font-size: var(--main-text-size);
-}
 #banner img{
     width: 100%;
     height: 100%;
+    transform: rotate(180deg);
+}
+
+#banner h1{
+    font-size: 5rem;
+    justify-self: center;
+    font-family: big-shoulders;
+    bottom: 85vh;
+    position: relative;
+    background-color: rgba(255, 199, 0, 0.71);
+    display: flex;
+    justify-content: center;
+}
+
+#banner div{
+    bottom: 2vh;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+#upper-text{
+    font-size: var(--main-text-size);
+    margin-left: var(--margin-left);
+    margin-top: var(--margin-top);
+}
+
+.form{
+    font-size: var(--main-text-size);
 }
