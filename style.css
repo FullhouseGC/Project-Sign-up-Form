@@ -46,7 +46,7 @@ html, body {
     font-size: 5rem;
     justify-self: center;
     font-family: big-shoulders;
-    bottom: 87vh;
+    bottom: 85vh;
     position: relative;
     background-color: rgba(255, 199, 0, 0.71);
     display: flex;
@@ -139,6 +139,16 @@ h2 {
     font-size: var(--main-text-size);
 }
 
+.form input{
+    border: 0;
+    padding: 1px;
+}
+
+.form input:hover{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 199, 0, 0.71);
+    padding: 0;
+}
 /*Lower part*/
 
 button{
@@ -146,6 +156,21 @@ button{
     font-size: 1.5rem;
     background-color: rgba(255, 199, 0, 0.71);
     border: 0;
-    border-radius: 12px;
     font-weight: 500;
+}
+
+button:hover{
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: calc(1rem - 1px) calc(2.4rem - 1px);
+}
+
+#lower-text-content p a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
+
+#lower-text-content p a:hover{
+    text-decoration: none;
+    text-shadow: 1px 1px  rgba(255, 199, 0, 0.71);;
 }
