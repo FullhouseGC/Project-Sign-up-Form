@@ -2,10 +2,19 @@
     font-family: big-shoulders;
     src: url(BigShouldersStencilDisplay-VariableFont_wght.woff2);
 }
+
+@font-face{
+    font-family: crimsonText-regular;
+    src: url(CrimsonText-Regular.woff2);
+}
 :root{
     --main-text-size: 3vh;
     --margin-left: 3vw;
     --margin-top: 3vw;
+    --margin-bottom: 3vw;
+    --marin-right: 25vw;
+    --max-height: 33.3%;
+    --main-font: "crimsonText-regular", serif;
 }
 html, body {
     height: 100%;
@@ -21,6 +30,8 @@ html, body {
     height: 100%;
 }
 
+/* Banner*/
+
 #banner{
     width: 50%;
 }
@@ -35,7 +46,7 @@ html, body {
     font-size: 5rem;
     justify-self: center;
     font-family: big-shoulders;
-    bottom: 85vh;
+    bottom: 87vh;
     position: relative;
     background-color: rgba(255, 199, 0, 0.71);
     display: flex;
@@ -48,12 +59,93 @@ html, body {
     font-size: 0.8rem;
 }
 
+/*Main content*/
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
 #upper-text{
+    background-color: rgba(222, 222, 222, 1);
+    max-height: var(--max-height);
+    font-family: var(--main-font);
+}
+
+#upper-text div{
     font-size: var(--main-text-size);
     margin-left: var(--margin-left);
     margin-top: var(--margin-top);
+    margin-right: var(--marin-right);
+    margin-bottom: var(--margin-bottom);
 }
 
+#sign-up{
+    background-color: rgba(190, 190, 190, 1);
+    max-height: var(--max-height);
+    font-family: var(--main-font);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    margin-left: var(--margin-left);
+}
+
+#h2-container{
+    background-color: rgba(255, 199, 0, 0.71);
+    width: 100%;
+    margin-bottom: 1.4rem;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+#sign-up-content{
+    font-size: var(--main-text-size);
+    margin-bottom: var(--margin-bottom);
+}
+
+#sign-up-content form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: var(--margin-left);
+    margin-right: var(--marin-right);
+}
+
+#sign-up-content form div{
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-up-content form div input{
+    max-width: 15rem;
+}
+
+#lower-text{
+    background-color: rgba(222, 222, 222, 1);
+    height: 100%;
+    font-family: var(--main-font);
+}
+
+#lower-text-content{
+    font-size: var(--main-text-size);
+    margin-left: var(--margin-left);
+    margin-top: var(--margin-top);
+    margin-right: var(--marin-right);
+    margin-bottom: var(--margin-bottom);
+}
 .form{
     font-size: var(--main-text-size);
+}
+
+/*Lower part*/
+
+button{
+    padding: 1rem 2.4rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 199, 0, 0.71);
+    border: 0;
+    border-radius: 12px;
+    font-weight: 500;
 }
